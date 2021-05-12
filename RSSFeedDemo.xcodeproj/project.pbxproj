@@ -14,6 +14,12 @@
 		CC95F0362649BB5F00D7D3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC95F0352649BB5F00D7D3FE /* Assets.xcassets */; };
 		CC95F0392649BB5F00D7D3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC95F0372649BB5F00D7D3FE /* LaunchScreen.storyboard */; };
 		CC95F0442649BB5F00D7D3FE /* RSSFeedDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC95F0432649BB5F00D7D3FE /* RSSFeedDemoTests.swift */; };
+		CCE926FA264BF05E00858003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC95F0302649BB5C00D7D3FE /* ViewController.swift */; };
+		CCE926FB264BF05E00858003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC95F02C2649BB5C00D7D3FE /* AppDelegate.swift */; };
+		CCE926FC264BF05E00858003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC95F02E2649BB5C00D7D3FE /* SceneDelegate.swift */; };
+		CCE926FF264BF05E00858003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC95F0372649BB5F00D7D3FE /* LaunchScreen.storyboard */; };
+		CCE92700264BF05E00858003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC95F0352649BB5F00D7D3FE /* Assets.xcassets */; };
+		CCE92701264BF05E00858003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC95F0322649BB5C00D7D3FE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,8 @@
 		CC95F03F2649BB5F00D7D3FE /* RSSFeedDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSFeedDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC95F0432649BB5F00D7D3FE /* RSSFeedDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeedDemoTests.swift; sourceTree = "<group>"; };
 		CC95F0452649BB5F00D7D3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE92705264BF05E00858003 /* RSSFeedDemo_Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSFeedDemo_Production.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE92706264BF05E00858003 /* RSSFeedDemo_Production-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RSSFeedDemo_Production-Info.plist"; path = "/Users/nitz/Desktop/RSSFeedDemo/RSSFeedDemo_Production-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCE926FD264BF05E00858003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +79,7 @@
 				CC95F02B2649BB5C00D7D3FE /* RSSFeedDemo */,
 				CC95F0422649BB5F00D7D3FE /* RSSFeedDemoTests */,
 				CC95F02A2649BB5C00D7D3FE /* Products */,
+				CCE92706264BF05E00858003 /* RSSFeedDemo_Production-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +88,7 @@
 			children = (
 				CC95F0292649BB5C00D7D3FE /* RSSFeedDemo.app */,
 				CC95F03F2649BB5F00D7D3FE /* RSSFeedDemoTests.xctest */,
+				CCE92705264BF05E00858003 /* RSSFeedDemo_Production.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +154,23 @@
 			productReference = CC95F03F2649BB5F00D7D3FE /* RSSFeedDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CCE926F8264BF05E00858003 /* RSSFeedDemo_Production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE92702264BF05E00858003 /* Build configuration list for PBXNativeTarget "RSSFeedDemo_Production" */;
+			buildPhases = (
+				CCE926F9264BF05E00858003 /* Sources */,
+				CCE926FD264BF05E00858003 /* Frameworks */,
+				CCE926FE264BF05E00858003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSFeedDemo_Production;
+			productName = RSSFeedDemo;
+			productReference = CCE92705264BF05E00858003 /* RSSFeedDemo_Production.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,6 +205,7 @@
 			targets = (
 				CC95F0282649BB5C00D7D3FE /* RSSFeedDemo */,
 				CC95F03E2649BB5F00D7D3FE /* RSSFeedDemoTests */,
+				CCE926F8264BF05E00858003 /* RSSFeedDemo_Production */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +228,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCE926FE264BF05E00858003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE926FF264BF05E00858003 /* LaunchScreen.storyboard in Resources */,
+				CCE92700264BF05E00858003 /* Assets.xcassets in Resources */,
+				CCE92701264BF05E00858003 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -211,6 +256,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC95F0442649BB5F00D7D3FE /* RSSFeedDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE926F9264BF05E00858003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE926FA264BF05E00858003 /* ViewController.swift in Sources */,
+				CCE926FB264BF05E00858003 /* AppDelegate.swift in Sources */,
+				CCE926FC264BF05E00858003 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +489,44 @@
 			};
 			name = Release;
 		};
+		CCE92703264BF05E00858003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RSSFeedDemo_Production-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "-DPRODUCTION";
+				PRODUCT_BUNDLE_IDENTIFIER = Nihilent.RSSFeedDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCE92704264BF05E00858003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RSSFeedDemo_Production-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "-DPRODUCTION";
+				PRODUCT_BUNDLE_IDENTIFIER = Nihilent.RSSFeedDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,6 +553,15 @@
 			buildConfigurations = (
 				CC95F04C2649BB5F00D7D3FE /* Debug */,
 				CC95F04D2649BB5F00D7D3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE92702264BF05E00858003 /* Build configuration list for PBXNativeTarget "RSSFeedDemo_Production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE92703264BF05E00858003 /* Debug */,
+				CCE92704264BF05E00858003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
